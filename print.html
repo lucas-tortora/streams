@@ -797,6 +797,11 @@ branches that have been restricted by keyload messages that contain their public
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody>
 <tr><td><strong>Returns:</strong> The Subscriber public key in hex representation.</td><td></td><td></td></tr>
 </tbody></table>
+<h4 id="author_public_key-string"><a class="header" href="#author_public_key-string">author_public_key(): string</a></h4>
+<p>Retrieve the Author public key. Errors if no channel is registered.</p>
+<table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td><strong>Returns:</strong> The Subscriber public key in hex representation.</td><td></td><td></td></tr>
+</tbody></table>
 <h4 id="is_registered-bool"><a class="header" href="#is_registered-bool">is_registered(): bool</a></h4>
 <p>Check if the subscriber instance has processed a channel announcement. </p>
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody>
@@ -1016,7 +1021,7 @@ using strings for the link and seq_link inputs.</p>
 <tr><td>masked_payload</td><td><code>Uint8Array</code></td><td>Masked payload bytes</td></tr>
 <tr><td><strong>Returns:</strong> A Message wrapper object</td><td></td><td></td></tr>
 </tbody></table>
-<h4 id="get_pk-string"><a class="header" href="#get_pk-string">get_pk(): string</a></h4>
+<h4 id="get_public_key-string-2"><a class="header" href="#get_public_key-string-2">get_public_key(): string</a></h4>
 <p>Fetch the public key of the Message sender (default if none is presented)</p>
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody>
 <tr><td><strong>Returns:</strong> Public key in hex representation of the sender of the message</td><td></td><td></td></tr>
@@ -1040,7 +1045,7 @@ using strings for the link and seq_link inputs.</p>
 <tr><td>msgid</td><td><a href="libraries/wasm/api_reference.html#Address"><code>Address</code></a></td><td>Address of expected next message</td></tr>
 <tr><td><strong>Returns:</strong> A NextMsgId wrapper object</td><td></td><td></td></tr>
 </tbody></table>
-<h4 id="get_pk-string-1"><a class="header" href="#get_pk-string-1">get_pk(): string</a></h4>
+<h4 id="get_public_key-string-3"><a class="header" href="#get_public_key-string-3">get_public_key(): string</a></h4>
 <p>Fetch the public key of the Message sender</p>
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody>
 <tr><td><strong>Returns:</strong> Public key in hex representation of the sender of the message</td><td></td><td></td></tr>
@@ -1604,6 +1609,13 @@ to ensure the user state matches all other publishers.</p>
 </tbody></table>
 <h4 id="sub_get_public_keypk-subscriber-a-hreflibrariescapi_referencehtmlerrerr_ta"><a class="header" href="#sub_get_public_keypk-subscriber-a-hreflibrariescapi_referencehtmlerrerr_ta">sub_get_public_key(pk, subscriber): <a href="libraries/c/api_reference.html#Err">err_t</a></a></h4>
 <p>Retrieve the Subscriber public key.</p>
+<table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td>pk</td><td><code>public_key_t const *</code></td><td>Placeholder for resulting Author Public Key</td></tr>
+<tr><td>subscriber</td><td><code>subscriber_t const *</code></td><td>Subscriber instance</td></tr>
+<tr><td><strong>Returns:</strong> Error code.</td><td></td><td></td></tr>
+</tbody></table>
+<h4 id="sub_author_public_keypk-subscriber-a-hreflibrariescapi_referencehtmlerrerr_ta"><a class="header" href="#sub_author_public_keypk-subscriber-a-hreflibrariescapi_referencehtmlerrerr_ta">sub_author_public_key(pk, subscriber): <a href="libraries/c/api_reference.html#Err">err_t</a></a></h4>
+<p>Retrieve the Author public key. Errors if no channel is registered.</p>
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody>
 <tr><td>pk</td><td><code>public_key_t const *</code></td><td>Placeholder for resulting Author Public Key</td></tr>
 <tr><td>subscriber</td><td><code>subscriber_t const *</code></td><td>Subscriber instance</td></tr>
