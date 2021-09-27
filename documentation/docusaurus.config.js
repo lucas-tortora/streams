@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'IOTA Streams',
   tagline: 'Official IOTA Streams Software',
-  url: 'https://streams.docs.iota.org/',
+  url: 'https://wiki.iota.org/streams/',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'throw',

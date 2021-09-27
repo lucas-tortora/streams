@@ -1,12 +1,12 @@
 <h1 align="center">
   <br>
-  <a href="https://docs.iota.org/docs/iota-streams/1.1/overview"><img src="streams.png"></a>
+  <a href="https://wiki.iota.org/streams/welcome"><img src="streams.png"></a>
 </h1>
 
 <h2 align="center">A cryptographic framework for building secure messaging protocols</h2>
 
 <p align="center">
-    <a href="https://docs.iota.org/docs/iota-streams/1.1/overview" style="text-decoration:none;">
+    <a href="https://wiki.iota.org/streams/welcome" style="text-decoration:none;">
     <img src="https://img.shields.io/badge/Documentation%20portal-blue.svg?style=for-the-badge"
          alt="Developer documentation portal">
       </p>
